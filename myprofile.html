@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #6ab49f;
+            padding: 30px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header h3,
+        .header p {
+            margin: 10px 0 0;
+        }
+
+        .dwnldbtn {
+            float: right;
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 20px;
+        }
+
+        .about-text p {
+            width: 513px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .skills-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .skills-icons img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .internships {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0 20px 30px;
+            gap: 20px;
+        }
+
+        .internship-box {
+            width: 40%;
+            min-width: 280px;
+        }
+
+        .contact {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .contact img {
+            margin: 10px;
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .skills-icons {
+                flex-wrap: wrap;
+            }
+
+            .internships {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .internship-box {
+                width: 90%;
+            }
+
+            .dwnldbtn {
+                float: none;
+                display: block;
+                margin: 10px auto 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Puram Hemalatha</h1>
+            <a href="resume.pdf" download>
+                <button class="dwnldbtn">Download Resume</button>
+            </a>
+
+            <h3>Aspiring Software Engineer</h3>
+            <p>Final year student passionate about web development</p>
+        </div>
+
+        <div class="about">
+            <img src="laddu.jpg" alt="Profile Picture" />
+            <div class="about-text">
+                <h3>About me</h3>
+                <p>I am a computer science final year student with a strong interest in web development and python.
+                    I enjoy creating responsive websites. My goal is to become a software engineer and build impactful
+                    software solutions.</p>
+            </div>
+        </div>
+
+        <h2>Skills</h2>
+        <div class="skills-icons">
+            <img src="Python-logo-notext.svg.png" alt="Python">
+            <img src="HTML5_logo_and_wordmark.svg.png" alt="HTML">
+            <img src="CSS-_-Glossary.svg" alt="CSS">
+            <img src="logo.svg" alt="SQL">
+        </div>
+
+        <h2>Internships</h2>
+        <div class="internships">
+            <div class="internship-box">
+                <h4>Internship One</h4>
+                <p>Worked on front-end development projects using core JavaScript, HTML, and CSS. Developed interactive
+                    web components such as dynamic forms, sliders, and modals.</p>
+            </div>
+            <div class="internship-box">
+                <h4>Internship Two</h4>
+                <p>Completed tasks and mini-projects using core Python concepts. Strengthened understanding of code
+                    logic, clean coding practices, and real-world problem solving.</p>
+            </div>
+        </div>
+
+        <h2>Contact</h2>
+        <div class="contact">
+            <a href="mailto:hemalathapuram4@gmail.com"><img src="gmail.png" alt="Gmail"></a>
+            <a href="https://www.linkedin.com/in/hemalatha-puram-870307349/" target="_blank"><img
+                    src="LinkedIn_icon.svg.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Hemalatha-Puram" target="_blank"><img src="github.png" alt="GitHub"></a>
+        </div>
+    </div>
+</body>
+
+</html>
